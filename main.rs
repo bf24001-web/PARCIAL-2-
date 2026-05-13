@@ -1,7 +1,4 @@
-// ============================================================
-//  Motor de Catálogo AVL — Biblioteca Municipal de Santa Ana
-//  Materia: Estructuras de Datos / Programación II
-// ============================================================
+
 
 // --- ESTRUCTURAS BASE ---
 
@@ -34,7 +31,7 @@ impl Nodo {
 }
 
 // ---------------------------------------------------------------
-// FASE 1 — AUDITORÍA: funciones del código base comentadas
+// FASE 1 — AUDITORÍA
 // ---------------------------------------------------------------
 
 /// Devuelve la altura del nodo, o 0 si el nodo es None.
@@ -61,7 +58,7 @@ fn obtener_balance(nodo: &Nodo) -> i32 {
 }
 
 // ---------------------------------------------------------------
-// ANÁLISIS DE .take() (Fase 1, punto 3)
+// ANÁLISIS DE .take() 
 // ---------------------------------------------------------------
 // .take() extrae el valor de un Option<T> dejando None en su lugar
 // y transfiriendo la propiedad (ownership) al llamador.
@@ -75,7 +72,7 @@ fn obtener_balance(nodo: &Nodo) -> i32 {
 // escribir al mismo tiempo, lo que el compilador rechaza.
 
 // ---------------------------------------------------------------
-// ROTACIONES (código base, ahora comentado)
+// ROTACIONES 
 // ---------------------------------------------------------------
 
 /// Rotación simple a la derecha sobre el nodo y.
@@ -117,7 +114,7 @@ fn rotar_izquierda(mut x: Box<Nodo>) -> Box<Nodo> {
 }
 
 // ---------------------------------------------------------------
-// INSERCIÓN + BALANCEO (código base, comentado)
+// INSERCIÓN + BALANCEO 
 // ---------------------------------------------------------------
 
 /// Inserta un libro en el árbol AVL y retorna la nueva raíz balanceada.
